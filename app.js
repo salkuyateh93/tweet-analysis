@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // important constants
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 // set, use
 app.set('view engine', 'ejs');
@@ -36,4 +36,4 @@ app.get('/analyzer', (req, res) => {
 });
 
 // listen on port
-app.listen(port, () => console.log(`App is running on port ${port}`));
+app.listen(PORT, () => console.log(`App is running on port ${PORT}`));
